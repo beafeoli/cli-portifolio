@@ -1,0 +1,74 @@
+:root {
+    --primary-color: rgb(255, 192, 203);
+    --secondary-color: rgb(255, 117, 140);
+    --tertiary-color: rgb(97, 173, 184);
+    --text-color: rgb(249, 249, 224);
+    --backgroung-color: rgb(28, 28, 28);
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'IBM Plex Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    color-scheme: dark;
+    background-color: var(--backgroung-color);
+    color: var(--text-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .ascii-banner {
+    line-height: 1;
+  }
+  
+  .terminal {
+    height: 98dvh;
+    max-width: 70dvw;
+    min-width: 400px;
+    white-space: pre-wrap;
+  }
+  
+  .primary-color {
+    color: var(--primary-color);
+  }
+  
+  .secondary-color {
+    color: var(--secondary-color);
+  }
+
+  .highlight {
+    text-shadow: 2px 2px var(--tertiary-color);
+  }
+
+  .command-input {
+    all: unset;
+    flex-grow: 1;
+  }
+
+  .command-output {
+    padding: 10px 0;
+  }
+
+  .projetc-item, .projetc-item a, .projetc-item a:visited {
+    color: var(--tertiary-color);
+    padding: 0 1px;
+  }
+
+  .projetc-item:hover, .projetc-item:hover a,  .projetc-item:hover a:visited {
+    background-color: var(--tertiary-color);
+    color: var(--backgroung-color);
+    outline: none;
+  }
+
+  .command-output a, .command-output a:visited {
+    text-decoration: underline;
+    color: var(--tertiary-color);
+  }
+
+  .command-line {
+    display: flex;
+    gap: 10px;
+  }
+
+  .help-list {
+    white-space: pre;
+  }
